@@ -1,0 +1,28 @@
+version: '3'
+volumes:
+  static:
+  media:
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DJANGO_SETTINGS_MODULE=engage_project.settings
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./app:/app
+      - static:/static
+      - media:/media
+    ports:
+      - 9000:9000
+    command: gunicorn -w 4 engage_project.wsgi:application -b 0.0.0.0:9000
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    volumes:
+      - static:/static
+      - media:/media
+    ports:
+      - 9001:80
