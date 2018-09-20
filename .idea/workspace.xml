@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="377f0cac-efab-452e-a046-13cc5178977e" name="Default Changelist" comment="" />
+    <list default="true" id="377f0cac-efab-452e-a046-13cc5178977e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/engage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/serializers.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +49,7 @@
           <entry key="Dockerfile" value="27" />
           <entry key="conf" value="22" />
           <entry key="gitignore" value="33" />
-          <entry key="py" value="1631" />
+          <entry key="py" value="1717" />
           <entry key="yml" value="43" />
         </counts>
       </usages-collector>
@@ -54,7 +57,7 @@
         <counts>
           <entry key="Dockerfile" value="27" />
           <entry key="PLAIN_TEXT" value="55" />
-          <entry key="Python" value="1631" />
+          <entry key="Python" value="1717" />
           <entry key="YAML" value="43" />
         </counts>
       </usages-collector>
@@ -83,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/engage/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="336" column="37" lean-forward="true" selection-start-line="336" selection-start-column="37" selection-end-line="336" selection-end-column="37" />
+            <state relative-caret-position="67">
+              <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="18" />
               <folding>
                 <element signature="e#1#40#0" expanded="true" />
               </folding>
@@ -95,11 +98,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/engage/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="425" column="20" selection-start-line="425" selection-start-column="20" selection-end-line="425" selection-end-column="20" />
+            <state relative-caret-position="341">
+              <caret line="386" column="57" lean-forward="true" selection-start-line="386" selection-start-column="57" selection-end-line="386" selection-end-column="57" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
-                <marker date="1537453296000" expanded="true" signature="13217:13236" ph="..." />
+                <marker date="1537454901000" expanded="true" signature="13217:13236" ph="..." />
               </folding>
             </state>
           </provider>
@@ -108,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/engage/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="249" column="76" lean-forward="true" selection-start-line="249" selection-start-column="76" selection-end-line="249" selection-end-column="76" />
+            <state relative-caret-position="108">
+              <caret line="229" column="43" selection-start-line="229" selection-start-column="33" selection-end-line="229" selection-end-column="43" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -145,6 +148,7 @@
       <find>edit_user</find>
       <find>edit</find>
       <find>School</find>
+      <find>UsrProfile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -279,6 +283,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="23" width="1678" height="927" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26222494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -415,16 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="249" column="76" lean-forward="true" selection-start-line="249" selection-start-column="76" selection-end-line="249" selection-end-column="76" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-586">
@@ -448,19 +443,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/engage/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="425" column="20" selection-start-line="425" selection-start-column="20" selection-end-line="425" selection-end-column="20" />
+        <state relative-caret-position="341">
+          <caret line="386" column="57" lean-forward="true" selection-start-line="386" selection-start-column="57" selection-end-line="386" selection-end-column="57" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
-            <marker date="1537453296000" expanded="true" signature="13217:13236" ph="..." />
+            <marker date="1537454901000" expanded="true" signature="13217:13236" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="229" column="43" selection-start-line="229" selection-start-column="33" selection-end-line="229" selection-end-column="43" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/engage/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="336" column="37" lean-forward="true" selection-start-line="336" selection-start-column="37" selection-end-line="336" selection-end-column="37" />
+        <state relative-caret-position="67">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="18" />
           <folding>
             <element signature="e#1#40#0" expanded="true" />
           </folding>

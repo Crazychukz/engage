@@ -104,6 +104,7 @@ class UserProfileRegistrationManager(models.Manager):
         supervisor = data.get('supervisor')
         user_module = data.get('user_module')
         state = data.get("state")
+        reset_imei = data.get("reset_imei")
 
         mainuser = UserProfile.objects.get(id=id)
         mainuser.role = role
@@ -120,6 +121,9 @@ class UserProfileRegistrationManager(models.Manager):
         if role == 'Marketing Executive':
             mainuser.user_module = user_module
             mainuser.save()
+            if reset_imei:
+                mainuser.imei = ''
+                mainuser.save()
             if supervisor is not None:
                 new_supervisor = UserProfile.objects.get(id=supervisor)
                 mainuser.supervisor = new_supervisor

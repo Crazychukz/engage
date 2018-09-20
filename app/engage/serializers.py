@@ -335,6 +335,7 @@ class SchoolEditSerializer(serializers.Serializer):
     def update(self, instance, validated_data):
         pass
 
+
 class ObjIdSerializers(serializers.Serializer):
     id = serializers.IntegerField(required=False)
 
@@ -383,6 +384,7 @@ class UsrProfile(serializers.Serializer):
     phone_number = serializers.CharField(required=False)
     supervisor_module = serializers.CharField(required=False)
     user_module = serializers.CharField(required=False)
+    reset_imei = serializers.BooleanField(required=False)
 
 
 class SchoolUpdateSerializer(serializers.ModelSerializer):
