@@ -60,7 +60,7 @@ DATABASES = {
         'NAME': 'engage_test',
         'USER': 'engage_test',
         'PASSWORD': 'pass@123',
-        'HOST': '54.72.172.83',
+        'HOST': '',
         'PORT': '5432',
     }
  }

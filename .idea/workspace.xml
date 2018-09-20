@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="377f0cac-efab-452e-a046-13cc5178977e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/engage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/engage/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/engage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/engage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/engage_project/media/schools/videos/The_Weather_-_a_poem_on_metastatic_cancer.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/engage_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage_project/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="377f0cac-efab-452e-a046-13cc5178977e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +45,7 @@
         <counts>
           <entry key="Dockerfile" value="27" />
           <entry key="conf" value="22" />
-          <entry key="gitignore" value="31" />
+          <entry key="gitignore" value="33" />
           <entry key="py" value="1473" />
           <entry key="yml" value="43" />
         </counts>
@@ -62,7 +53,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Dockerfile" value="27" />
-          <entry key="PLAIN_TEXT" value="53" />
+          <entry key="PLAIN_TEXT" value="55" />
           <entry key="Python" value="1473" />
           <entry key="YAML" value="43" />
         </counts>
@@ -84,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+              <caret column="2" selection-start-column="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -472,7 +463,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
