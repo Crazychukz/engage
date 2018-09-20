@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="377f0cac-efab-452e-a046-13cc5178977e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/engage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="377f0cac-efab-452e-a046-13cc5178977e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,7 @@
           <entry key="Dockerfile" value="27" />
           <entry key="conf" value="22" />
           <entry key="gitignore" value="33" />
-          <entry key="py" value="1475" />
+          <entry key="py" value="1631" />
           <entry key="yml" value="43" />
         </counts>
       </usages-collector>
@@ -56,7 +54,7 @@
         <counts>
           <entry key="Dockerfile" value="27" />
           <entry key="PLAIN_TEXT" value="55" />
-          <entry key="Python" value="1475" />
+          <entry key="Python" value="1631" />
           <entry key="YAML" value="43" />
         </counts>
       </usages-collector>
@@ -82,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/engage/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2383">
-              <caret line="191" column="26" selection-start-line="191" selection-start-column="26" selection-end-line="191" selection-end-column="26" />
+            <state relative-caret-position="-131">
+              <caret line="336" column="37" lean-forward="true" selection-start-line="336" selection-start-column="37" selection-end-line="336" selection-end-column="37" />
               <folding>
                 <element signature="e#1#40#0" expanded="true" />
               </folding>
@@ -94,14 +92,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/engage/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2586">
-              <caret line="207" column="48" lean-forward="true" selection-start-line="207" selection-start-column="48" selection-end-line="207" selection-end-column="48" />
+            <state relative-caret-position="455">
+              <caret line="425" column="20" selection-start-line="425" selection-start-column="20" selection-end-line="425" selection-end-column="20" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
-                <marker date="1537443800000" expanded="true" signature="13217:13236" ph="..." />
+                <marker date="1537453296000" expanded="true" signature="13217:13236" ph="..." />
               </folding>
             </state>
           </provider>
@@ -172,10 +170,10 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/app/engage/migrations/0002_auto_20180920_0957.py" />
         <option value="$PROJECT_DIR$/app/engage/urls.py" />
-        <option value="$PROJECT_DIR$/app/engage/serializers.py" />
         <option value="$PROJECT_DIR$/app/engage/views.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/engage_project/settings.py" />
+        <option value="$PROJECT_DIR$/app/engage/serializers.py" />
         <option value="$PROJECT_DIR$/app/engage/models.py" />
       </list>
     </option>
@@ -281,7 +279,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="23" width="1678" height="927" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26222494" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -449,23 +446,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/models.py">
+    <entry file="file://$PROJECT_DIR$/app/engage/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2383">
-          <caret line="191" column="26" selection-start-line="191" selection-start-column="26" selection-end-line="191" selection-end-column="26" />
+        <state relative-caret-position="455">
+          <caret line="425" column="20" selection-start-line="425" selection-start-column="20" selection-end-line="425" selection-end-column="20" />
           <folding>
-            <element signature="e#1#40#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
+            <marker date="1537453296000" expanded="true" signature="13217:13236" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/serializers.py">
+    <entry file="file://$PROJECT_DIR$/app/engage/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2586">
-          <caret line="207" column="48" lean-forward="true" selection-start-line="207" selection-start-column="48" selection-end-line="207" selection-end-column="48" />
+        <state relative-caret-position="-131">
+          <caret line="336" column="37" lean-forward="true" selection-start-line="336" selection-start-column="37" selection-end-line="336" selection-end-column="37" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
-            <marker date="1537443800000" expanded="true" signature="13217:13236" ph="..." />
+            <element signature="e#1#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

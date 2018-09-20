@@ -482,5 +482,6 @@ class HypoSerializer(serializers.ModelSerializer):
                   'remark',
                   'date_captured',
                   'image',
-                  'phone_number'
+                  'phone_number',
+                  'hypo_type'
                   ]
