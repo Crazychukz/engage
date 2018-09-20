@@ -18,6 +18,7 @@ class UserModuleSerializer(serializers.ModelSerializer):
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
     email = serializers.EmailField(required=True)
+    password = serializers.CharField(required=True)
     first_name = serializers.CharField(required=True)
     last_name = serializers.CharField(required=True)
     supervisor = serializers.IntegerField(required=False)
@@ -29,7 +30,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
 
     class Meta(object):
         model = User
-        fields = ['username', 'email', 'first_name', 'last_name', 'role', 'supervisor', 'phone_number', 'state', 'user_module', 'supervisor_module']
+        fields = ['username', 'email', 'first_name', 'last_name', 'role', 'supervisor', 'phone_number', 'state', 'user_module', 'supervisor_module', 'password']
 
     def validate_email(self, value):
         if User.objects.filter(email=value).exists():
@@ -56,7 +57,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
         return validated_data
 
     def update(self, instance, validated_data):
-        UserProfile.objects
+        pass
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -137,6 +138,82 @@ class UserLoginSerializer(serializers.ModelSerializer):
         return data
 
 
+class MobileLoginSerializer(serializers.ModelSerializer):
+
+    username = serializers.CharField( required=False, allow_blank=True)
+    email = serializers.EmailField( required=False, allow_blank=True)
+    password = serializers.CharField(required=True, write_only=True)
+    role = serializers.CharField(required=False)
+    imei = serializers.CharField(required=False)
+    first_name = serializers.CharField(required=False)
+    last_name = serializers.CharField(required=False)
+    id = serializers.IntegerField(required=False)
+    state = serializers.CharField(required=False)
+    user_module = serializers.CharField(required=False)
+    created = serializers.IntegerField(required=False)
+    visited = serializers.CharField(required=False)
+
+    class Meta(object):
+        model = User
+        fields = ['email', 'username', 'password', 'last_name', 'first_name' , 'role', 'id', 'state', 'created', 'user_module', 'visited', 'imei']
+
+    def validate(self, data):
+        email = data.get('email', None)
+        username = data.get('username', None)
+        password = data.get('password', None)
+        imei = data.get('imei', None)
+
+        if not email and not username:
+            raise serializers.ValidationError("Please enter username or email to login.")
+
+        if not imei:
+            raise serializers.ValidationError("No IMEI Number")
+
+        user = User.objects.filter(
+            Q(email=email) | Q(username=username)
+        ).exclude(
+            email__isnull=True
+        ).exclude(
+            email__iexact=''
+        ).distinct()
+
+        if user.exists() and user.count() == 1:
+            user_obj = user.first()
+            mobile_user = UserProfile.objects.get(user=user_obj)
+        else:
+            raise serializers.ValidationError("This username/email is not valid.")
+
+        if mobile_user.imei is not None:
+            user_imei = mobile_user.imei
+            if user_imei != imei:
+                raise serializers.ValidationError("Wrong IMEI for this user")
+        else:
+            mobile_user.imei = imei
+            mobile_user.save()
+
+        if user_obj:
+            if not user_obj.check_password(password):
+                raise serializers.ValidationError("Invalid credentials.")
+
+        if user_obj.is_active:
+            main_user = UserProfile.objects.get(user=user_obj)
+            data['email'] = user_obj.email
+            data['username'] = user_obj.username
+            data['first_name'] = user_obj.first_name
+            data['last_name'] = user_obj.last_name
+            data['role'] = main_user.role
+            data['id'] = main_user.id
+            data['state'] = main_user.state
+            data['user_module'] = main_user.user_module
+            data['created']= main_user.created()
+            data['visited'] = main_user.visited()
+
+        else:
+            raise serializers.ValidationError("User not active.")
+
+        return data
+
+
 class SchoolSerializer(serializers.ModelSerializer):
     user = UsersSerializer()
 
@@ -155,6 +232,7 @@ class SchoolSerializer(serializers.ModelSerializer):
                   'contact_name',
                   'contact_phone',
                   'school_phone',
+                  'school_type',
                   'level',
                   'nursery_population',
                   'population',
@@ -235,6 +313,28 @@ class SchoolRegistrationSerializer(serializers.Serializer):
         return instance
 
 
+class SchoolEditSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=False, required=False)
+    name = serializers.CharField(required=True, max_length=200)
+    school_type = serializers.CharField(required=True, max_length=100)
+    address = serializers.CharField(required=True, max_length=200)
+    state = serializers.CharField(required=True, max_length=50)
+    lga = serializers.CharField(required=True, max_length=100)
+    contact_name = serializers.CharField(allow_blank=True, max_length=100, required=False)
+    contact_phone = serializers.CharField(allow_blank=True, max_length=20, required=False)
+    school_phone = serializers.CharField(allow_blank=True, max_length=20, required=False)
+    level = serializers.CharField(allow_blank=True, max_length=100, required=False)
+    population = serializers.IntegerField(required=True,)
+    nursery_population = serializers.IntegerField(required=True)
+    landmark = serializers.CharField(max_length=200, required=False)
+    designation = serializers.CharField(max_length=200, required=False)
+
+    def create(self, validated_data):
+        pass
+
+    def update(self, instance, validated_data):
+        pass
+
 class ObjIdSerializers(serializers.Serializer):
     id = serializers.IntegerField(required=False)
 
@@ -283,20 +383,6 @@ class UsrProfile(serializers.Serializer):
     phone_number = serializers.CharField(required=False)
     supervisor_module = serializers.CharField(required=False)
     user_module = serializers.CharField(required=False)
-
-
-# class SchoolRegSerializer(serializers.ModelSerializer):
-#     user = UsrProfile()
-#
-#     class Meta(object):
-#         model = School
-#         fields = [
-#                   'id',
-#                   'name',
-#                   'address',
-#                   'school_image',
-#                   'user'
-#                   ]
 
 
 class SchoolUpdateSerializer(serializers.ModelSerializer):
@@ -352,6 +438,9 @@ class HypoCreationSerializer(serializers.Serializer):
     landmark = serializers.CharField(max_length=200, required=False)
     remark = serializers.CharField(max_length=200, required=False)
     date_captured = serializers.CharField(max_length=100, required=False)
+    image = serializers.ImageField(max_length=None, use_url=True, allow_empty_file=True, required=False)
+    phone_number = serializers.CharField(allow_blank=True, max_length=20, required=False)
+    hypo_type = serializers.CharField(allow_blank=True, max_length=60, required=False)
 
     def validate_user_id(self, value):
         if not value:
@@ -372,6 +461,7 @@ class HypoCreationSerializer(serializers.Serializer):
 
 class HypoSerializer(serializers.ModelSerializer):
     user = UsersSerializer()
+    image = serializers.ImageField(max_length=None, use_url=True, allow_empty_file=True, required=False)
 
     class Meta(object):
         model = Hypo
@@ -388,5 +478,7 @@ class HypoSerializer(serializers.ModelSerializer):
                   'lng',
                   'landmark',
                   'remark',
-                  'date_captured'
+                  'date_captured',
+                  'image',
+                  'phone_number'
                   ]

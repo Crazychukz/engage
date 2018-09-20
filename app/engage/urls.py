@@ -4,10 +4,12 @@ from . import views
 urlpatterns = [
     url(r'^register/$', views.UserRegistrationAPIView.as_view(), name='register'),
     url(r'^edit_user/$', views.edit_user, name='edit_user'),
+    url(r'^edit_school/$', views.edit_school, name='edit_school'),
     url(r'^all_users/$', views.Users.as_view(), name='all_users'),
     url(r'^user/$', views.User.as_view(), name='all_users'),
     url(r'^login/$', views.UserLoginAPIView.as_view(), name='login'),
     url(r'^new_school/$', views.SchoolRegistrationAPIView.as_view(), name='new_school'),
+    url(r'^mobile_login/$', views.MobileLoginAPIView.as_view(), name='mobile_login'),
     url(r'^visited_school/$', views.VisitedSchoolList.as_view(), name='visited_school'),
     url(r'^hypo_data/$', views.HypoCreationAPIView.as_view(), name='hypo_data'),
     url(r'^user_modules/$', views.ModulesList.as_view(), name='user_modules'),

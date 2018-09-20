@@ -32,6 +32,18 @@ class UserLoginAPIView(views.APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+class MobileLoginAPIView(views.APIView):
+    permission_classes = (permissions.AllowAny, )
+    serializer_class = serializers.MobileLoginSerializer
+
+    def post(self, request):
+        serializer = self.serializer_class(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
 @csrf_exempt
 def all_users_api(request):
     if request.method == 'GET':
@@ -221,5 +233,19 @@ def edit_user(request):
                 UserProfile.objects.update_user(data)
                 user = UserProfile.objects.filter(id=data['id'])
                 serializer = serializers.UsersSerializer(user, many=True)
+                return JsonResponse(serializer.data, status=201, safe=False)
+        return JsonResponse(serializer.errors, status=400)
+
+
+@csrf_exempt
+def edit_school(request):
+    if request.method == 'POST':
+        data = JSONParser().parse(request)
+        serializer = serializers.SchoolEditSerializer(data=data)
+        if serializer.is_valid():
+            if data['id'] is not None:
+                School.objects.update_school(data)
+                school = School.objects.filter(id=data['id'])
+                serializer = serializers.SchoolRegistrationSerializer(school, many=True)
                 return JsonResponse(serializer.data, status=201, safe=False)
         return JsonResponse(serializer.errors, status=400)

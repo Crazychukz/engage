@@ -12,7 +12,7 @@ class UserProfileRegistrationManager(models.Manager):
 
     @transaction.atomic
     def create_user(self, data):
-        password = self.generate_password()
+        password = data.get('password')
         email = data.get('email')
         username = data.get('username')
         first_name = data.get('first_name')
@@ -39,6 +39,7 @@ class UserProfileRegistrationManager(models.Manager):
         if role == 'Marketing Executive':
             supervisor_user = UserProfile.objects.get(id=supervisor)
             user_state = supervisor_user.state
+            user_branch = supervisor_user.branch
 
             new_profile = self.create(
                 user=user,
@@ -48,6 +49,7 @@ class UserProfileRegistrationManager(models.Manager):
                 user_module=user_module,
                 state=user_state,
                 supervisor=supervisor_user,
+                branch=user_branch
 
             )
 
@@ -61,7 +63,8 @@ class UserProfileRegistrationManager(models.Manager):
                 phone_number=phone_number,
                 password_string=password,
                 user_module=user_module,
-                state=state
+                state=state,
+                branch=branch
             )
             for i in supervisor_module:
                 sup_module = UserModules.objects.get(id=i)
@@ -76,7 +79,8 @@ class UserProfileRegistrationManager(models.Manager):
             phone_number=phone_number,
             password_string=password,
             user_module=user_module,
-            state=state
+            state=state,
+            branch=branch
         )
 
         return new_profile
@@ -94,19 +98,17 @@ class UserProfileRegistrationManager(models.Manager):
         password_string = data.get('password_string')
         branch = data.get('branch')
         phone_number = data.get('phone_number')
-        first_name =  data.get('first_name')
+        first_name = data.get('first_name')
         last_name = data.get('last_name')
         email = data.get('email')
         supervisor = data.get('supervisor')
         user_module = data.get('user_module')
-
         state = data.get("state")
 
         mainuser = UserProfile.objects.get(id=id)
         mainuser.role = role
         mainuser.password_string = password_string
         mainuser.phone_number = phone_number
-        mainuser.state = state
         mainuser.save()
 
         mainuser.user.set_password(password_string)
@@ -118,8 +120,15 @@ class UserProfileRegistrationManager(models.Manager):
         if role == 'Marketing Executive':
             mainuser.user_module = user_module
             mainuser.save()
+            if supervisor is not None:
+                new_supervisor = UserProfile.objects.get(id=supervisor)
+                mainuser.supervisor = new_supervisor
+                mainuser.save()
 
         if role == 'Admin' or role == 'Supervisor':
+            mainuser.branch = branch
+            mainuser.state = state
+            mainuser.save()
             supervisor_module = json.loads(data.get('supervisor_module'))
             mainuser.supervisor_module.clear()
             for i in supervisor_module:
@@ -128,9 +137,6 @@ class UserProfileRegistrationManager(models.Manager):
                 mainuser.save()
 
         return mainuser
-
-
-
 
 
 class UserModules(models.Model):
@@ -172,11 +178,13 @@ class UserProfile(models.Model):
     password_string = models.CharField(max_length=20, null=False, verbose_name='Password String')
     phone_number = models.CharField(max_length=11, verbose_name='Phone Number')
     role = models.CharField(max_length=50, choices=ROLES, verbose_name='Role',  blank=True)
+    imei = models.CharField(max_length=50, verbose_name='IMEI', blank=True)
     supervisor = models.ForeignKey('UserProfile', verbose_name='Supervisor', null=True, blank=True)
     user_module = models.CharField(choices=MODULE, null=True, blank=True, verbose_name='User Module', max_length=200)
     supervisor_module = models.ManyToManyField(UserModules, null=True, blank=True, verbose_name='Supervisor User Module')
     super_admin = models.BooleanField(default=False, verbose_name='Super Admin')
     state = models.CharField(max_length=200, verbose_name='State', null=True)
+    branch = models.CharField(max_length=300, verbose_name='Branch', null=True, blank=True)
     objects = UserProfileRegistrationManager()
 
     class Meta:
@@ -186,7 +194,12 @@ class UserProfile(models.Model):
         return self.user.username
 
     def created(self):
-        created = School.objects.filter(user=self).count()
+        created = 0
+        if self.user_module == 'School Sampling':
+            created = School.objects.filter(user=self).count()
+
+        if self.user_module == 'Hypo Sampling':
+            created = Hypo.objects.filter(user=self).count()
         return created
 
     def visited(self):
@@ -292,6 +305,41 @@ class SchoolRegistrationManager(models.Manager):
 
         return data
 
+    @transaction.atomic
+    def update_school(self, data):
+        id = data.get('id')
+        name = data.get('name')
+        school_type = data.get('school_type')
+        address = data.get('address')
+        lga = data.get('lga')
+        contact_name = data.get('contact_name')
+        contact_phone = data.get('contact_phone')
+        school_phone = data.get('school_phone')
+        level = data.get('level')
+        population = data.get('population')
+        nursery_population = data.get('nursery_population')
+        landmark = data.get('landmark')
+        designation = data.get('designation')
+
+        main_school = School.objects.get(id=id)
+        main_school.name = name
+        main_school.school_type = school_type
+        main_school.address = address
+        main_school.lga = lga
+        main_school.contact_name = contact_name
+        main_school.contact_phone = contact_phone
+        main_school.school_phone = school_phone
+        main_school.level = level
+        main_school.population = population
+        main_school.nursery_population = nursery_population
+        main_school.landmark = landmark
+        main_school.designation = designation
+
+        main_school.save()
+
+        return True
+        pass
+
 
 class School(models.Model):
     TYPE = (
@@ -311,6 +359,7 @@ class School(models.Model):
         ('Nursery - Primary', 'Nursery - Primary'),
         ('Nursery - Secondary', 'Nursery - Secondary'),
         ('Primary - Secondary', 'Primary - Secondary'),
+        ('Creche/Nursery/Primary/Secondary', 'Creche/Nursery/Primary/Secondary'),
     )
     name = models.CharField(max_length=200, verbose_name='School Name', blank=True)
     school_type = models.CharField(max_length=100, verbose_name='School Type', choices=TYPE, null=True)
@@ -359,7 +408,7 @@ class School(models.Model):
 
     class Meta:
         verbose_name_plural = "School Sampling"
-        ordering = ['id']
+        ordering = ['-id']
 
     def __str__(self):
         return self.name
@@ -369,6 +418,15 @@ class School(models.Model):
             supervisor = self.user.supervisor.user.username
 
             return supervisor
+        else:
+
+            return 'None'
+
+    def branch(self):
+        if self.user is not None and self.user.branch is not None:
+            branch = self.user.branch
+
+            return branch
         else:
 
             return 'None'
@@ -396,6 +454,12 @@ class Hypo(models.Model):
         ('Home', 'Home'),
     )
 
+    FILTER = (
+        ('Bleach', 'Bleach'),
+        ('Toilet Cleaner', 'Toilet Cleaner'),
+        ('Both', 'Both')
+    )
+
     name = models.CharField(max_length=200, verbose_name='School Name', blank=True)
     category = models.CharField(max_length=100, verbose_name='Category', choices=TYPE, null=True)
     address = models.CharField(max_length=200, verbose_name='Address', null=True, blank=True)
@@ -407,6 +471,10 @@ class Hypo(models.Model):
     user = models.ForeignKey(UserProfile, verbose_name='User', null=True, blank=True)
     remark = models.TextField(verbose_name='Remark', null=True, blank=True)
     date_captured = models.DateField(verbose_name='Date Captured', null=True, blank=True)
+    image = models.ImageField(verbose_name='Hypo Image', default='hypo/images/noimage.jpg', blank=True,
+                              upload_to='hypo/images/')
+    phone_number = models.CharField(verbose_name='Phone Number', max_length=20, null=True)
+    hypo_type = models.CharField(verbose_name='Hypo Type',max_length=30, null=True, blank=True, choices=FILTER)
 
     class Meta:
         verbose_name_plural = "Hypo Sampling"
