@@ -123,6 +123,8 @@ class UserProfileRegistrationManager(models.Manager):
             if supervisor is not None:
                 new_supervisor = UserProfile.objects.get(id=supervisor)
                 mainuser.supervisor = new_supervisor
+                mainuser.state = new_supervisor.state
+                mainuser.branch = new_supervisor.branch
                 mainuser.save()
 
         if role == 'Admin' or role == 'Supervisor':
@@ -135,6 +137,13 @@ class UserProfileRegistrationManager(models.Manager):
                 sup_module = UserModules.objects.get(id=i)
                 mainuser.supervisor_module.add(sup_module)
                 mainuser.save()
+
+        if role == 'Supervisor':
+            all_users = UserProfile.objects.filter(supervisor=mainuser, role='Marketing Executive')
+            for i in all_users:
+                i.state = state
+                i.branch = branch
+                i.save()
 
         return mainuser
 
@@ -189,6 +198,7 @@ class UserProfile(models.Model):
 
     class Meta:
         verbose_name_plural = "User Profiles"
+        ordering = ['-id']
 
     def __str__(self):
         return self.user.username
@@ -478,7 +488,7 @@ class Hypo(models.Model):
 
     class Meta:
         verbose_name_plural = "Hypo Sampling"
-        ordering = ['id']
+        ordering = ['-id']
 
     def __str__(self):
         return self.name

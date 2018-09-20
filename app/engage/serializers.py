@@ -402,6 +402,7 @@ class SchoolUpdateSerializer(serializers.ModelSerializer):
     visit_end_date = serializers.CharField(max_length=None, required=False)
     final_lat = serializers.FloatField(required=False)
     final_lng = serializers.FloatField(required=False)
+    visited = serializers.BooleanField(required=False, default=True)
 
     class Meta(object):
         model = School
@@ -421,7 +422,8 @@ class SchoolUpdateSerializer(serializers.ModelSerializer):
             'visit_start_date',
             'visit_end_date',
             'final_lat',
-            'final_lng'
+            'final_lng',
+            'visited'
         ]
 
 
