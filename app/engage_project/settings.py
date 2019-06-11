@@ -19,7 +19,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'engage',
-    'engage_project'
+    'engage_project',
+    'multiselectfield'
 ]
 
 MIDDLEWARE = [
@@ -34,11 +35,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'engage_project.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -50,16 +50,15 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'engage_project.wsgi.application'
 
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'engage_test',
-        'USER': 'engage_test',
-        'PASSWORD': 'pass@123',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': '',
         'PORT': '5432',
     }
@@ -116,6 +115,7 @@ CORS_ALLOW_HEADERS = (
     'user-agent',
     'x-csrftoken',
     'x-requested-with',
+    'host'
 )
 
 MEDIA_URL = '/media/'
@@ -125,3 +125,19 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static/')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+
+IMPORT_EXPORT_USE_TRANSACTIONS = True
+
+
+IPWARE_META_PRECEDENCE_ORDER = (
+     'HTTP_X_FORWARDED_FOR', 'X_FORWARDED_FOR',
+     'HTTP_CLIENT_IP',
+     'HTTP_X_REAL_IP',
+     'HTTP_X_FORWARDED',
+     'HTTP_X_CLUSTER_CLIENT_IP',
+     'HTTP_FORWARDED_FOR',
+     'HTTP_FORWARDED',
+     'HTTP_VIA',
+     'REMOTE_ADDR',
+ )

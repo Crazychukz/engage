@@ -2,8 +2,214 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="377f0cac-efab-452e-a046-13cc5178977e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/engage/code.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/engage/negotiation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/server.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/engage_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/engage_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/engage/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/engage/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/css/changelists.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/css/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/css/rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/css/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/fonts/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/fonts/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/calendar-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-addlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-changelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-deletelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-no.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-unknown-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-unknown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/icon-yes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/inline-delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/selector-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/sorting-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/tooltag-add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/SelectBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/SelectFilter2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/actions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/cancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/change_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/collapse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/inlines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/inlines.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/jquery.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/popup_response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/prepopulate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/prepopulate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/prepopulate_init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/timeparse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/urlify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/css/bootstrap-tweaks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/css/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/css/font-awesome-4.0.3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/css/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/docs/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/docs/css/highlight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/docs/css/jquery.json-view.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/docs/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/docs/img/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/docs/js/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/docs/js/highlight.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/docs/js/jquery.json-view.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/img/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/js/ajax-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/js/coreapi-0.1.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/js/csrf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/js/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/static/rest_framework/js/prettify-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage_project/media/feedback_2018-12-0319:13:52.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage_project/media/feedback_2018-12-0319:48:55.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage_project/media/hypo_data_2018-12-0913:01:27.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/engage_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/engage_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/css/changelists.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/css/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/css/rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/css/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/fonts/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/fonts/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/calendar-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-addlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-changelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-deletelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-no.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-unknown-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-unknown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/icon-yes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/inline-delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/selector-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/sorting-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/tooltag-add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/SelectBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/SelectFilter2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/actions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/cancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/change_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/collapse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/inlines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/inlines.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/jquery.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/popup_response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/prepopulate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/prepopulate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/prepopulate_init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/timeparse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/urlify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/css/bootstrap-tweaks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/css/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/css/font-awesome-4.0.3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/css/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/docs/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/docs/css/highlight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/docs/css/jquery.json-view.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/docs/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/docs/img/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/docs/js/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/docs/js/highlight.pack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/docs/js/jquery.json-view.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/img/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/js/ajax-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/js/coreapi-0.1.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/js/csrf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/js/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/rest_framework/js/prettify-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/engage_project.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/engage_project.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,53 +217,77 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/engage_project$code.coverage" NAME="code Coverage Results" MODIFIED="1557939478838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/engage" />
+    <SUITE FILE_PATH="coverage/engage_project$views.coverage" NAME="views Coverage Results" MODIFIED="1538597130304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/engage" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1098581794">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.closed" value="35" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.12" value="4" />
+          <entry key="project.open.time.2" value="6" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="7" />
+          <entry key="project.open.time.7" value="5" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="5" />
-          <entry key="conf" value="2" />
-          <entry key="gitignore" value="1" />
+          <entry key="DjangoModelDependency/#engage_project" value="3" />
+          <entry key="Dockerfile" value="13" />
+          <entry key="conf" value="6" />
+          <entry key="gitignore" value="4" />
+          <entry key="html" value="5" />
           <entry key="js" value="2" />
-          <entry key="py" value="15" />
+          <entry key="py" value="95" />
           <entry key="sh" value="2" />
-          <entry key="txt" value="4" />
-          <entry key="yml" value="2" />
+          <entry key="txt" value="12" />
+          <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Dockerfile" value="5" />
+          <entry key="Dockerfile" value="13" />
+          <entry key="HTML" value="5" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="15" />
-          <entry key="YAML" value="2" />
+          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="Python" value="95" />
+          <entry key="UML" value="3" />
+          <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="27" />
-          <entry key="conf" value="22" />
-          <entry key="gitignore" value="33" />
-          <entry key="py" value="1717" />
+          <entry key="conf" value="44" />
+          <entry key="gitignore" value="48" />
+          <entry key="html" value="6" />
+          <entry key="py" value="26333" />
+          <entry key="txt" value="10" />
           <entry key="yml" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Dockerfile" value="27" />
-          <entry key="PLAIN_TEXT" value="55" />
-          <entry key="Python" value="1717" />
+          <entry key="HTML" value="6" />
+          <entry key="PLAIN_TEXT" value="102" />
+          <entry key="Python" value="26332" />
+          <entry key="RegExp" value="1" />
           <entry key="YAML" value="43" />
         </counts>
       </usages-collector>
@@ -65,32 +295,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/engage_project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+            <state relative-caret-position="346">
+              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/app/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/engage/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="18" />
-              <folding>
-                <element signature="e#1#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="450">
+              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -98,11 +316,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/engage/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="386" column="57" lean-forward="true" selection-start-line="386" selection-start-column="57" selection-end-line="386" selection-end-column="57" />
+            <state relative-caret-position="470">
+              <caret line="1420" selection-start-line="1420" selection-end-line="1443" selection-end-column="9" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
-                <marker date="1537454901000" expanded="true" signature="13217:13236" ph="..." />
+                <marker date="1560246022604" expanded="true" signature="17700:17719" ph="..." />
+                <marker date="1560246022604" expanded="true" signature="23849:23854" ph="..." />
+                <marker date="1560246022604" expanded="true" signature="25907:25912" ph="..." />
+                <marker date="1560246022604" expanded="true" signature="34684:34685" ph="..." />
+                <marker date="1560246022604" expanded="true" signature="37083:37088" ph="..." />
+                <marker date="1560246022604" expanded="true" signature="40589:40594" ph="..." />
+                <marker date="1560246022604" expanded="true" signature="40982:41751" ph="..." />
+                <marker date="1560246022604" expanded="true" signature="41626:41694" ph="..." />
+                <marker date="1560246022604" expanded="true" signature="41995:44160" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/engage/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="805" column="4" selection-start-line="805" selection-start-column="4" selection-end-line="805" selection-end-column="14" />
+              <folding>
+                <element signature="e#1#40#0" expanded="true" />
+                <marker date="1559543161541" expanded="true" signature="1700:1703" ph="..." />
+                <marker date="1559543161541" expanded="true" signature="2723:3658" ph="..." />
+                <marker date="1559543161541" expanded="true" signature="41241:41588" ph="..." />
+                <marker date="1559543161541" expanded="true" signature="50411:50417" ph="..." />
+                <marker date="1559543161541" expanded="true" signature="66190:67078" ph="..." />
+                <marker date="1559543161541" expanded="true" signature="72635:72640" ph="..." />
               </folding>
             </state>
           </provider>
@@ -111,11 +355,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/engage/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="229" column="43" selection-start-line="229" selection-start-column="33" selection-end-line="229" selection-end-column="43" />
+            <state relative-caret-position="193">
+              <caret line="727" selection-start-line="727" selection-end-line="736" selection-end-column="66" />
               <folding>
-                <element signature="e#24#63#0" expanded="true" />
+                <element signature="e#24#73#0" expanded="true" />
+                <marker date="1560248194989" expanded="true" signature="110762:110927" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/engage_project/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -123,11 +377,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/engage/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="66" lean-forward="true" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+            <state relative-caret-position="307">
+              <caret line="75" column="64" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -137,48 +400,102 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HypoCreationSerializer</find>
-      <find>update_user</find>
-      <find>edit_user</find>
-      <find>edit</find>
+      <find>hypo_numbers</find>
+      <find>UsersSerializer</find>
+      <find>SchoolSerializerLite</find>
+      <find>SchoolSerializer</find>
+      <find>all</find>
+      <find>Users</find>
+      <find>edit_school</find>
+      <find>SchoolEditSerializer</find>
+      <find>Print</find>
+      <find>SchoolRegistrationAPIView</find>
+      <find>SchoolRegistrationSerializer</find>
+      <find>first()</find>
+      <find>HotelSerializerLite</find>
+      <find>Cafe</find>
+      <find>Users02</find>
+      <find>UsersSerializer02Lite</find>
+      <find>KelloggsSamplingSerializer</find>
       <find>School</find>
-      <find>UsrProfile</find>
+      <find>KVisitedSerializer</find>
+      <find>visit_date</find>
+      <find>KVisitedSchoolsAPIView</find>
+      <find>SchoolUpdateAPIView2</find>
+      <find>allow</find>
+      <find>SchoolUpdateAPIView</find>
+      <find>SchoolUpdateSerializer</find>
+      <find>VisitedSchoolSerializerLite</find>
+      <find>VisitedSchoolList</find>
+      <find>SchoolList</find>
+      <find>Update</find>
+      <find>visited_school</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/docker/python/entrypoint.sh" />
-        <option value="$PROJECT_DIR$/entrypoint.sh" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/engage/views.py" />
-        <option value="$PROJECT_DIR$/engage/serializers.py" />
-        <option value="$PROJECT_DIR$/engage/models.py" />
-        <option value="$PROJECT_DIR$/engage/urls.py" />
-        <option value="$PROJECT_DIR$/engage/admin.py" />
-        <option value="$PROJECT_DIR$/engage_project/urls.py" />
-        <option value="$PROJECT_DIR$/docker/nginx/Dockerfile" />
         <option value="$PROJECT_DIR$/engage_project/settings.py" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/app/engage_project/urls.py" />
-        <option value="$PROJECT_DIR$/docker/nginx/engage_project.conf" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/app/engage/migrations/0002_auto_20180920_0957.py" />
-        <option value="$PROJECT_DIR$/app/engage/urls.py" />
-        <option value="$PROJECT_DIR$/app/engage/views.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0003_auto_20180926_1300.py" />
+        <option value="$PROJECT_DIR$/app/engage_project/urls.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0004_auto_20180926_1420.py" />
+        <option value="$PROJECT_DIR$/app/engage_project/templates/engage/index.html" />
+        <option value="$PROJECT_DIR$/app/engage/index.html" />
+        <option value="$PROJECT_DIR$/app/templates/engage/index.html" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0005_auto_20181030_2020.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0006_auto_20181208_1905.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0007_auto_20181208_1924.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0008_auto_20181208_1933.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0009_auto_20181209_0052.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0010_auto_20181209_0749.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0011_auto_20181209_0903.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0012_auto_20181209_1217.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0013_auto_20181210_0954.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0014_auto_20181212_2138.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0015_auto_20181216_1504.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0016_auto_20190116_0615.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0017_auto_20190127_2253.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0018_auto_20190130_1317.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0019_auto_20190205_1126.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/engage_project/settings.py" />
-        <option value="$PROJECT_DIR$/app/engage/serializers.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0020_auto_20190227_0442.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0021_auto_20190305_0811.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0022_auto_20190305_0836.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0023_auto_20190306_0532.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0024_auto_20190314_1051.py" />
+        <option value="$PROJECT_DIR$/app/engage/admin.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0025_auto_20190314_1208.py" />
+        <option value="$PROJECT_DIR$/app/engage/negotiation.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0026_auto_20190325_1014.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0027_auto_20190327_0839.py" />
+        <option value="$PROJECT_DIR$/docker/nginx/engage_project.conf" />
+        <option value="$PROJECT_DIR$/docker/nginx/server.conf" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0028_auto_20190512_1619.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0029_auto_20190513_0733.py" />
+        <option value="$PROJECT_DIR$/app/engage/code.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0031_auto_20190515_1703.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0030_auto_20190515_1701.py" />
+        <option value="$PROJECT_DIR$/app/requirements.txt" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0032_auto_20190530_1646.py" />
+        <option value="$PROJECT_DIR$/app/engage/migrations/0033_auto_20190602_2342.py" />
         <option value="$PROJECT_DIR$/app/engage/models.py" />
+        <option value="$PROJECT_DIR$/app/engage/urls.py" />
+        <option value="$PROJECT_DIR$/app/engage/serializers.py" />
+        <option value="$PROJECT_DIR$/app/engage/views.py" />
+        <option value="$PROJECT_DIR$/app/engage_project/settings.py" />
       </list>
     </option>
   </component>
@@ -188,11 +505,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1678" />
-    <option name="height" value="927" />
+    <option name="width" value="1680" />
+    <option name="height" value="949" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,7 +516,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,26 +523,66 @@
               <item name="engage_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="engage_project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="engage_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="engage_project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="engage_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="engage_project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="engage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="engage_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="engage_project" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="engage_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="engage_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="engage_project" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="engage_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="engage_project" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="engage_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="engage_project" type="462c0819:PsiDirectoryNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/engage" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/engage_project/media" />
       <recent name="$PROJECT_DIR$/app/engage_project" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/media" />
+      <recent name="$PROJECT_DIR$/app/engage_project/media/kelloggs/images" />
+      <recent name="$PROJECT_DIR$/app/engage_project/media" />
+      <recent name="$PROJECT_DIR$/app/engage" />
       <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
@@ -243,7 +598,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.code">
+    <configuration name="code" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="engage_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/engage" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/engage/code.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="engage_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/engage" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/engage/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="engage_project" type="Python.DjangoServer" factoryName="Django server">
       <module name="engage_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,6 +666,17 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django server.engage_project" />
+      <item itemvalue="Python.code" />
+      <item itemvalue="Python.views" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.code" />
+        <item itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -282,15 +692,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="23" width="1678" height="927" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="949" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26222494" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4952741" visible="true" weight="0.2851038" />
+      <window_info id="Structure" order="1" sideWeight="0.5047259" side_tool="true" weight="0.22982885" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290398" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32788798" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -299,8 +708,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50061125" side_tool="true" weight="0.32934132" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49938875" visible="true" weight="0.32934132" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49938875" visible="true" weight="0.2917153" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32934132" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -318,33 +727,309 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/engage/templates/engage/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/index.html" />
+    <entry file="file://$PROJECT_DIR$/app/templates/engage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27975">
+          <caret line="1865" selection-start-line="1865" selection-end-line="1865" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0005_auto_20181030_2020.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0006_auto_20181208_1905.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0007_auto_20181208_1924.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0008_auto_20181208_1933.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0009_auto_20181209_0052.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0010_auto_20181209_0749.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0011_auto_20181209_0903.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0012_auto_20181209_1217.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0014_auto_20181212_2138.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0013_auto_20181210_0954.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2145">
+          <caret line="145" column="28" selection-start-line="145" selection-start-column="28" selection-end-line="145" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0015_auto_20181216_1504.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0016_auto_20190116_0615.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0019_auto_20190205_1126.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0017_auto_20190127_2253.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0018_auto_20190130_1317.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0020_auto_20190227_0442.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="70" column="10" lean-forward="true" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0021_auto_20190305_0811.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0022_auto_20190305_0836.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0023_auto_20190306_0532.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage_project/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DjangoModelDependency/#engage_project">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DjangoModelDependency</ID>
+          <OriginalElement>#engage_project</OriginalElement>
+          <nodes>
+            <node x="" y="">app.engage.models.Hypo</node>
+            <node x="" y="">app.engage.models.Restaurant</node>
+            <node x="" y="">app.engage.models.KelloggsPreSampling</node>
+            <node x="" y="">app.engage.models.Bar</node>
+            <node x="" y="">app.engage.models.School</node>
+            <node x="" y="">app.engage.models.Hotel</node>
+            <node x="" y="">app.engage.models.KelloggsRetail</node>
+            <node x="" y="">app.engage.models.SNTrash</node>
+            <node x="" y="">django.contrib.auth.models.Group</node>
+            <node x="" y="">app.engage.models.Cafe</node>
+            <node x="" y="">app.engage.models.UserModules</node>
+            <node x="" y="">app.engage.models.KelloggsPostSampling</node>
+            <node x="" y="">app.engage.models.UserProfile</node>
+            <node x="" y="">app.engage.models.KelloggsSchool</node>
+            <node x="" y="">app.engage.models.Branch</node>
+            <node x="" y="">django.contrib.auth.models.Permission</node>
+            <node x="" y="">django.contrib.auth.models.User</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6747191011235955" x="899.0" y="191.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0024_auto_20190314_1051.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0025_auto_20190314_1208.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/negotiation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0026_auto_20190325_1014.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0027_auto_20190327_0839.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker/python/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/python/entrypoint.sh">
+    <entry file="file://$PROJECT_DIR$/docker/nginx/engage_project.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entrypoint.sh">
+    <entry file="file://$PROJECT_DIR$/docker/nginx/server.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="855">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/admin/js/admin/DateTimeShortcuts.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/static/admin/js/admin/DateTimeShortcuts.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docker/nginx/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0028_auto_20190512_1619.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0029_auto_20190513_0733.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0031_auto_20190515_1703.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0030_auto_20190515_1701.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -355,120 +1040,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/nginx/engage_project.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/engage_project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="e#1#41#0" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0002_auto_20180920_0957.py">
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0033_auto_20190602_2342.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/migrations/0032_auto_20190530_1646.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/urls.py">
+    <entry file="file://$PROJECT_DIR$/app/engage/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="66" lean-forward="true" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+        <state relative-caret-position="358">
+          <caret line="805" column="4" selection-start-line="805" selection-start-column="4" selection-end-line="805" selection-end-column="14" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-586">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage_project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="386" column="57" lean-forward="true" selection-start-line="386" selection-start-column="57" selection-end-line="386" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-            <marker date="1537454901000" expanded="true" signature="13217:13236" ph="..." />
+            <element signature="e#1#40#0" expanded="true" />
+            <marker date="1559543161541" expanded="true" signature="1700:1703" ph="..." />
+            <marker date="1559543161541" expanded="true" signature="2723:3658" ph="..." />
+            <marker date="1559543161541" expanded="true" signature="41241:41588" ph="..." />
+            <marker date="1559543161541" expanded="true" signature="50411:50417" ph="..." />
+            <marker date="1559543161541" expanded="true" signature="66190:67078" ph="..." />
+            <marker date="1559543161541" expanded="true" signature="72635:72640" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/engage/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="229" column="43" selection-start-line="229" selection-start-column="33" selection-end-line="229" selection-end-column="43" />
+        <state relative-caret-position="193">
+          <caret line="727" selection-start-line="727" selection-end-line="736" selection-end-column="66" />
           <folding>
-            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#24#73#0" expanded="true" />
+            <marker date="1560248194989" expanded="true" signature="110762:110927" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/engage/models.py">
+    <entry file="file://$PROJECT_DIR$/app/engage/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="18" />
+        <state relative-caret-position="470">
+          <caret line="1420" selection-start-line="1420" selection-end-line="1443" selection-end-column="9" />
           <folding>
-            <element signature="e#1#40#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
+            <marker date="1560246022604" expanded="true" signature="17700:17719" ph="..." />
+            <marker date="1560246022604" expanded="true" signature="23849:23854" ph="..." />
+            <marker date="1560246022604" expanded="true" signature="25907:25912" ph="..." />
+            <marker date="1560246022604" expanded="true" signature="34684:34685" ph="..." />
+            <marker date="1560246022604" expanded="true" signature="37083:37088" ph="..." />
+            <marker date="1560246022604" expanded="true" signature="40589:40594" ph="..." />
+            <marker date="1560246022604" expanded="true" signature="40982:41751" ph="..." />
+            <marker date="1560246022604" expanded="true" signature="41626:41694" ph="..." />
+            <marker date="1560246022604" expanded="true" signature="41995:44160" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="75" column="64" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/engage_project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
         </state>
       </provider>
     </entry>

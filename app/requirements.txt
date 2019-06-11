@@ -1,3 +1,4 @@
+backports-abc==0.5
 certifi==2018.4.16
 chardet==3.0.4
 dj-database-url==0.5.0
@@ -10,6 +11,7 @@ djangorestframework==3.8.2
 dnspython==1.15.0
 enum34==1.1.6
 eventlet==0.24.1
+futures==3.1.0
 greenlet==0.4.14
 gunicorn==19.9.0
 idna==2.7
@@ -19,6 +21,11 @@ Pillow==5.2.0
 psycopg2==2.7.5
 pytz==2018.5
 requests==2.19.1
+singledispatch==3.4.0.3
 six==1.11.0
+tornado==5.1.1
 urllib3==1.23
 whitenoise==3.3.1
+XlsxWriter==1.1.1
+django-multiselectfield==0.1.8
+django-ipware==2.1.0
